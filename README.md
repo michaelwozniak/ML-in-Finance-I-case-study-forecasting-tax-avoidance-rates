@@ -43,13 +43,21 @@ This problem is a classic panel problem (many companies and many years).
 ## How to run the project locally
 1. Install **conda** environment management system (if you don't have it - on WNE UW computers it is already installed): https://conda.io/projects/conda/en/latest/user-guide/install/index.html
 2. Create **conda environment** using provided requirements.txt file (paste the following commands in Anaconda Prompt): 
+    
     2.0 Navigate in Anaconda Prompt into the project directory, for instance in my case it will be: `cd /Users/michalwozniak/ML-in-Finance-I-case-study-forecasting-tax-avoidance-rates`
+    
     2.1. `conda config --append channels conda-forge`
+    
     2.2. `conda create --name case_study_env --file requirements.txt`
+    
     2.3. `conda activate case_study_env`
+    
     2.4. `pip install -r requirements_pypi.txt`
+    
 3. Run the project (using your *case_study_env*) in your favourite IDE which supports notebooks for instance in Jupyter Notebook, for instance run in Anaconda Prompt: 
+
     3.1 `conda activate case_study_env`
+    
     3.2 `jupyter notebook`
 4. Voilà
 
