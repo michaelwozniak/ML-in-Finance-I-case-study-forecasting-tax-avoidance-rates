@@ -62,9 +62,8 @@ This problem is a classic panel problem (many companies and many years).
 4. Voilà
 
 ## How to run the project remotely
-1. Log in to your Google account
-2. Copy url of this Github project and change the domain from 'github.com' to 'githubtocolab.com'
-3. Voilà
+1. Copy url of this Github project and change the domain from 'github.com' to 'github.dev'
+2. Voilà
 
 -------------
 
