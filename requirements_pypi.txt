@@ -1,4 +1,0 @@
-mypy-extensions==0.4.3
-pathspec==0.10.2
-black==22.10.0
-relieff==0.1.2

@@ -34,37 +34,150 @@ This problem is a classic panel problem (many companies and many years).
 │   ├── 08.svr-model.ipynb
 │   ├── 09.final-comparison-and-summary.ipynb
 │   └── 10.homework-random-forest-model.ipynb
-├── requirements.txt
-└── requirements_pypi.txt
 ```
 
 -------------
 
 ## How to run the project locally
-1. Install **conda** environment management system (if you don't have it - on WNE UW computers it is already installed): https://conda.io/projects/conda/en/latest/user-guide/install/index.html
-2. Create **conda environment** using provided requirements.txt file (paste the following commands in Anaconda Prompt): 
-    
-    2.0 Navigate in Anaconda Prompt into the project directory, for instance in my case it will be: `cd /Users/michalwozniak/ML-in-Finance-I-case-study-forecasting-tax-avoidance-rates`
-    
-    2.1. `conda config --append channels conda-forge`
-    
-    2.2. `conda create --name case_study_env --file requirements.txt`
-    
-    2.3. `conda activate case_study_env`
-    
-    2.4. `pip install -r requirements_pypi.txt`
-    
-3. Run the project (using your *case_study_env*) in your favourite IDE which supports notebooks for instance in Jupyter Notebook, for instance run in Anaconda Prompt: 
+This guide will walk you through setting up your environment and running the “ML in Finance I: Case Study – Forecasting Tax Avoidance Rates” project on your machine.
 
-    3.1 `conda activate case_study_env`
-    
-    3.2 `jupyter notebook`
-4. Voilà
+### 🎯 Goal
 
-## How to run the project remotely
-1. Copy url of this Github project and change the domain from 'github.com' to 'github.dev'
-2. Voilà
+- Clone the example project repository  
+- Install the required tools and dependencies  
+- Launch the environment using **UV**
+- Run experiments
 
+### 🛠️ Prerequisites
+
+1. **Python**  
+   Download and install the latest version:  
+   https://www.python.org/downloads/
+
+2. **Git**  
+   Needed to clone the repository:  
+   https://git-scm.com/downloads
+
+3. **Ultralight Versioner (UV)**  
+   A lightweight Python version & environment manager:  
+   https://astral.sh/uv
+
+4. **Your favorite IDE**, e.g. **Visual Studio Code**  
+   https://code.visualstudio.com/
+
+### 📥 Installation Steps
+
+#### 1. Install Python
+- Visit https://www.python.org/downloads/  
+- Download the installer for your OS and follow the instructions.
+
+#### 2. Install Git
+- Visit https://git-scm.com/downloads  
+- Download and install Git.
+
+#### 3. (Optional) Install Visual Studio Code
+- Visit https://code.visualstudio.com/  
+- Download and install the editor.
+
+#### 4. Install UV
+
+> **What is UV?**  
+> UV (Ultralight Versioner) is a tool to manage multiple Python versions and create isolated project environments. It makes installing dependencies, syncing environments, and switching contexts effortless.
+
+* **macOS / Linux**
+
+  ```bash
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+  ```
+
+  This command downloads and installs the `uv` CLI tool.
+
+* **Windows (PowerShell)**
+
+  ```powershell
+  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+  ```
+
+  This PowerShell command fetches and executes the `uv` installation script.
+
+
+---
+
+### 🚀 Project Setup
+
+1. Open your terminal (or PowerShell on Windows).
+
+2. Navigate to your Desktop:
+
+   ```bash
+   cd ~/Desktop
+   ```
+
+   **What this does:** Changes the working directory to your Desktop.
+
+3. Create a new folder for this tutorial:
+
+   ```bash
+   mkdir tutorial_m1
+   ```
+
+   **What this does:** Creates a directory named `tutorial_m1`.
+
+4. Enter the tutorial directory:
+
+   ```bash
+   cd tutorial_m1
+   ```
+
+5. Clone the project repository:
+
+   ```bash
+   git clone https://github.com/michaelwozniak/ML-in-Finance-I-case-study-forecasting-tax-avoidance-rates.git
+   ```
+
+   **What this does:** Downloads a local copy of the project’s code.
+
+6. Change into the project folder:
+
+   ```bash
+   cd ML-in-Finance-I-case-study-forecasting-tax-avoidance-rates/
+   ```
+
+7. Sync the environment with UV:
+
+   ```bash
+   uv sync
+   ```
+
+   **What this does:**
+
+   * Reads the UV configuration (e.g., `uv.yaml` or `pyproject.toml`)
+   * Installs all specified dependencies (e.g., pandas, scikit-learn)
+   * Creates a Python virtual environment with the correct version
+
+---
+
+## 🔗 Useful Links
+
+* **Project Repository**
+  [https://github.com/michaelwozniak/ML-in-Finance-I-case-study-forecasting-tax-avoidance-rates](https://github.com/michaelwozniak/ML-in-Finance-I-case-study-forecasting-tax-avoidance-rates)
+
+* **Python Downloads**
+  [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+* **Git Downloads**
+  [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+* **Visual Studio Code**
+  [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+* **UV (Ultralight Versioner)**
+  [https://astral.sh/uv](https://astral.sh/uv)
+
+---
+
+> Good luck and happy learning! 🚀
+> If you run into any issues, please open an Issue on the repository or ask your instructor.
 -------------
 
 **Attention! This project is for demonstration purposes, i.e. we omit many practices of writing good code and project structuring due to its demonstrative character. It has rather experimental form!!!**
